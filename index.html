@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toothless5143's Portfolio</title>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Array.from(document.getElementsByTagName('a')).forEach(function(link) {
+        link.setAttribute('target', '_blank');
+      });
+    });
+  </script>
+  
+  <style>
+    img.rounded-corners {
+    border-radius: 20%;
+    }
+  </style>
+
+  <!--
+    - favicon
+ 
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  -->
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.jpg" alt="Safwan Luban" width="80" class="rounded-corners">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Safwan Luban">Safwan Luban</h1>
+
+          <p class="title">Ethical Hacker, Cyber Security Researcher</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:lubansafwan2004@gmail.com" class="contact-link">lubansafwan2004@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-discord"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Discord</p>
+
+              <a href="https://discord.com/users/565518876067102740" class="contact-link">toothless5143</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Age</p>
+              
+              <!-- HEHE not revealing my date of birth -->
+              <time datetime="1982-06-23">19</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="enter-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Credly</p>
+
+              <a href="https://www.credly.com/users/safwan-luban/badges" class="contact-link">Safwan Luban</a>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/Toothless5143" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/safwan-luban-82b417262/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/saf.lub/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/Toothless5143" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/toothless5143/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certification</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Harnessing 2 years of relentless self-learning, I wield red and blue teaming expertise to empower cybersecurity. Curiosity fuels my creative approach, defending digital realms and unlocking safety. Bridging tech complexities for a safer, more secure world.
+          </p>
+
+          <p>
+            Beyond the realm of cyber security, I am a multifaceted individual driven by diverse interests and a thirst for knowledge.
+            I love learning new things. My likings are: chess, music, reading, philosopy, meditation & my personality type is INTJ-T.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/Untitled.jpg
+                " alt="ISC2" width="40" class="rounded-corners">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">(ISC)<sup>2</sup> CC</h4>
+
+                <p class="service-item-text">
+                  Currently working on (ISC)<sup>2</sup>'s CC and on some other certifications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/bug.png" alt="Bug Hunting" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Bug Hunting</h4>
+
+                <p class="service-item-text">
+                  Hunting bugs in different programs to make the cyberspace safe and to enrich my skill set.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/cyber.png" alt="Cyber Security" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Self Learning</h4>
+
+                <p class="service-item-text">
+                  Countinously learning and practicing both red and blue teaming techniques to grow as a hacker.
+                  As practicing both blue and red teaming techniques is going to give me both attacker's and defender's perspective.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/chess.png" alt="chess" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Chess</h4>
+
+                <p class="service-item-text">
+                  Trying to master chess. As chess increases a lot of soft skills such as stress handling, rationality & e.t.c.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Quotes</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/horse.jpg" alt="Charlie Mackesy" width="60" class="rounded-corners" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Charlie Mackesy</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    "I can’t see a way through” - said the boy.<br>
+                    ... “Can you see your next step?”<br>
+                    ...“Yes."<br>
+                    ... "Just take that” - said the horse..
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/socrates.jpg" alt="Socrates" height="90" width="60" class="rounded-corners" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Socrates</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    “No man has the right to be an amateur in the matter of physical training. It is a shame for a man to grow old without seeing the beauty and strength of which his body is capable.” 
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/seneca.JPG" alt="Seneca" height="90" width="60" class="rounded-corners" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Seneca</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    To win true freedom, you must be a slave to philosophy.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/abraham.jpg" alt="Abraham Lincoln" height="90" width="60" class="rounded-corners" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Abraham Lincoln</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Give me six hours to chop down a tree and I will spend the first four sharpening the axe.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Credly Badges</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://www.credly.com/badges/060131ac-8cba-4ec2-9f2f-974fa7d9ebc5/public_url">
+                <img src="./assets/images/cpts.png" alt="badge logo" height="150" width="300">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.credly.com/badges/d1f4a8c9-38e0-446a-9fa9-2a7ce688a83a/public_url">
+                <img src="./assets/images/isc.png" alt="badge logo" height="150" width="300">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="settings-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Operating systems</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Linux</h4>
+
+              <span>Main machine</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Windows</h4>
+
+            </li>
+
+          </ol>
+
+        </section>
+        
+        <div class="separator"></div>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="server-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Technical languages</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">C</h4>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Python</h4>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SQL</h4>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bash</h4>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">HTML</h4>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Markdown</h4>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="cube-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Expertise</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Fundamental</h4>
+
+              <span>Computer hardware knowledge, Networking knowledge, Hyper-V technology knowledge</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Red teaming</h4>
+
+              <span>OWASP top 10, Active and passive recon, Footprinting, File transfer methods, CMS exploitation(WordPress), Footprinting,  Windows and Linux privilege escalation, Vulnerability assessment, Basic AD enumeration & exploitation, Web pentesting.</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Blue teaming</h4>
+
+              <span>Pyramid of Pain, Cyber Kill Chain, Unified Cyber Kill Chain, Diamond Model, MITRE, Basics of Yara, Network security and traffic analysis, endpoint security monitoring, Security information and event management, Digital forensics and incident response, Analyzing phishing mails.</span>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Tools</h4>
+              <span>Nmap, Burp Suite, Fuff, Sqlmap, Nessus, Hydra, Metasploit, Wireshark, TCPdump, Responder, Bloodhound, Mimikatz, Rubeus, PowerView, Snort, Zeek, NetworkMiner, Brim, Wazuh, Splunk, Autopsy, Redline, Kape, Volatility.</span>
+            </li>
+
+            </ol>
+
+
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Related Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bug Bounty Hunter</h4>
+
+              <span>2023 — Present</span>
+
+            </li>
+
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Frontend Web developer</h4>
+
+              <span>2021</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Created a tool for fuzzing API endpoints.</h4>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Created a tool for subdomain enumeration.</h4>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Created a tool to scrape data from Git Hub for OSINT.</h4>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Participated in 40+ CTFs and wrote professional pen-testing reports for some of them.</h4>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Configured a home lab with firewall, IDS, and VPNs.</h4>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Conducted vulnerability assessments on a vulnerable web app.</h4>
+
+            </li>
+
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Wrote various scripts to automate things to demonstrate my scripting knowledge.</h4>
+
+            </li>
+
+            <!-- 
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">#</h4>
+
+            </li>
+            -->
+
+
+          </ol>
+
+        </section>
+
+        
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="certification" data-page="certification">
+
+        <header>
+          <h2 class="h2 article-title">Certification</h2>
+        </header>
+
+        <section class="projects">
+
+          
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="cpts">
+              <a href="./assets/certs/CPTS Cert.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/certs/CPTS Cert.jpg" alt="cpts" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">HTB Certified Penetration Testing Specialist</h3>
+
+                <p class="project-category">HTB CPTS holders will possess technical competency in the ethical hacking and penetration testing domains at an intermediate level.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="cap">
+              <a href="./assets/certs/SafwanLuban-CertifiedAppSecPractitioner(CAP).pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/certs/CAP Cert.jpg" alt="cap" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Certified Appsec Practitioner</h3>
+
+                <p class="project-category">Certified Appsec Practitioner (CAP) is an intermediate-level exam to test attendees’ knowledge on the core concepts of application security.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="dante">
+              <a href="./assets/certs/Dante Cert.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/certs/Dante Cert.jpg" alt="dante" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">HTB Dante Prolab</h3>
+
+                <p class="project-category">Dante Pro Lab is a captivating environment that features both Linux and Windows Operating Systems.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="throwback">
+              <a href="./assets/certs/Throwback Cert.png">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/certs/Throwback Cert.png" alt="throwback" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">THM Throwback Lab</h3>
+
+                <p class="project-category">Throwback is an Active Directory (AD) lab that teaches the fundamentals and core concepts of attacking a Windows network.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="cysa">
+              <a href="./assets/certs/cybrary-cert-comptia-cysa.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/certs/cysa cert.jpg" alt="cysa." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Cybrary CompTIA CySA+ Course</h3>
+
+                <p class="project-category">The CompTIA Cybersecurity Analyst (CySA+ CS0-002) certification prepares you to identify and combat malware, advanced persistent threats (APTs), and other attacks that threaten an organization’s security.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="soc">
+              <a href="./assets/certs/SOC Cert.png">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/certs/SOC Cert.png" alt="soc" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">THM SOC Level 1 Training</h3>
+
+                <p class="project-category">Level 1 SOC Analysts (also known as Tier 1 SOC Analysts or entry-level SOC Analysts) are triage specialists with a primary role of monitoring and identifying potential threats.</p>
+
+              </a>
+            </li>
+
+            <!--
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            -->
+            
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+        
+        <div class="icon-box">
+          <ion-icon name="logo-medium"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="contact-title">Medium</p>
+
+          <a href="https://toothless5143.medium.com/" class="contact-link">Toothless5143</a>
+        </div>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
