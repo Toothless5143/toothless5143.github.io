@@ -1,906 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safwan Luban</title>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        	Array.from(document.getElementsByTagName('a')).forEach(function(link) {
-        		link.setAttribute('target', '_blank');
-        	});
-        });
-    </script>
-    <style>
-        img.rounded-corners {
-        	border-radius: 20%;
-        }
-    </style>
-    <!--
-         - favicon
-      -->
-    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-    <!--
-         - custom css link
-         -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!--
-         - google font link
-         -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safwan Luban</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('a').forEach(link => link.setAttribute('target', '_blank'));
+    });
+  </script>
+  <style>
+    img.rounded-corners {
+      border-radius: 20%;
+    }
+  </style>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!--
-         - #MAIN
-         -->
-    <main>
-        <!--
-            - #SIDEBAR
-            -->
-        <aside class="sidebar" data-sidebar>
-            <div class="sidebar-info">
-                <figure class="avatar-box"> <img src="./assets/images/my-avatar.png" alt="Safwan Luban" width="80" class="rounded-corners"> </figure>
-                <div class="info-content">
-                    <h1 class="name" title="Safwan Luban">Safwan Luban</h1>
-                    <p class="title">Ethical Hacker, <br>Independent Security Researcher </p>
-                </div> <button class="info_more-btn" data-sidebar-btn> <span>Show More</span>
-                    <ion-icon name="chevron-down"></ion-icon>
-                </button>
-            </div>
-            <div class="sidebar-info_more">
-                <div class="separator"></div>
-                <ul class="contacts-list">
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="information-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Online Identity</p> <a href="#" class="contact-link">Toothless5143</a>
-                        </div>
-                    </li>
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="cloud-done-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Cloud Role</p> <a href="#" class="contact-link">Security Engineer</a>
-                        </div>
-                    </li>
-
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="code-slash-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Offensive Role</p> <a href="#" class="contact-link">Penetration Tester</a>
-                        </div>
-                    </li>
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="shield-half-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Defensive Role</p> <a href="#" class="contact-link">SOC Analyst</a>
-                        </div>
-                    </li>
-                </ul>
-                <div class="separator"></div>
-                <ul class="social-list">
-                    <li class="social-item"> <a href="mailto:contact@safwanluban.xyz" class="social-link">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </a> </li>
-                    <li class="social-item"> <a href="https://discord.com/users/565518876067102740" class="social-link">
-                            <ion-icon name="logo-discord"></ion-icon>
-                        </a> </li>
-                    <li class="social-item"> <a href="https://twitter.com/Toothless5143" class="social-link">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a> </li>
-                </ul>
-            </div>
-        </aside>
-        <!--
-            - #main-content
-            -->
-        <div class="main-content">
-            <!--
-            - #NAVBAR
-            -->
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-item"> <button class="navbar-link  active" data-nav-link>Home</button> </li>
-                    <li class="navbar-item"> <button class="navbar-link" data-nav-link>Awareness</button> </li>
-                    <li class="navbar-item"> <button class="navbar-link" data-nav-link>Resume</button> </li>
-                    <li class="navbar-item"> <button class="navbar-link" data-nav-link>Certifications</button> </li>
-                    <li class="navbar-item"> <button class="navbar-link" data-nav-link>Blogs</button> </li>
-                </ul>
-            </nav>
-            <!--
-            - #ABOUT
-            -->
-            <article class="home  active" data-page="home">
-                <header>
-                    <h2 class="h2 article-title">About me</h2>
-                </header>
-                <section class="about-text">
-                    <p>Harnessing a commitment to relentless self-learning, I possess expertise in both offensive and defensive cybersecurity operations. My curiosity fuels a creative approach to defending digital environments, where I translate complex concepts into actionable insights to enhance organizational security. Passionate about empowering teams and fostering a culture of security awareness, I strive to contribute to a safer digital landscape.</p>
-                    <p>Beyond cybersecurity, I am a multifaceted individual with a thirst for knowledge. My interests include chess, music, reading diverse books, philosophy, and meditation. As an INTJ-T personality type, I thrive on deep thinking and introspection, constantly seeking to expand my understanding of the world.</p>
-                    <div class="stats-container" style="display: flex; justify-content: center; align-items: center; text-align: center; gap: 50px; margin-top: 40px; flex-wrap: wrap;">
-                        <div class="stat" style="flex-basis: 20%; min-width: 150px;">
-                            <h3 style="color: #39FF14; font-weight: bold;">03+</h3>
-                            <p style="font-size: 1rem;">Years of<br>Experience</p>
-                        </div>
-                        <div class="stat" style="flex-basis: 20%; min-width: 150px;">
-                            <h3 style="color: #39FF14; font-weight: bold;">05+</h3>
-                            <p style="font-size: 1rem;">Years of Self Learning Experience</p>
-                        </div>
-                        <div class="stat" style="flex-basis: 20%; min-width: 150px;">
-                            <h3 style="color: #39FF14; font-weight: bold;">15+</h3>
-                            <p style="font-size: 1rem;">Certifications<br>Earned</p>
-                        </div>
-                        <div class="stat" style="flex-basis: 20%; min-width: 150px;">
-                            <h3 style="color: #39FF14; font-weight: bold;">50+</h3>
-                            <p style="font-size: 1rem;">CTF's<br>Participated</p>
-                        </div>
-                    </div>
-                </section>
-                <div class="separator"></div>
-                <!--
-            - #PORTFOLIO
-            -->
-                <section class="portfolio">
-                    <h3 class="h3 service-title">Portfolio</h3>
-                    <ul class="contacts-list" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-                        <li class="contact-item">
-                            <div class="icon-box">
-                                <ion-icon name="logo-github"></ion-icon>
-                            </div>
-                            <div class="contact-info">
-                                <p class="contact-title">GitHub</p> <a href="https://github.com/Toothless5143" class="contact-link">Projects</a>
-                            </div>
-                        </li>
-                        <li class="contact-item">
-                            <div class="icon-box">
-                                <ion-icon name="logo-medium"></ion-icon>
-                            </div>
-                            <div class="contact-info">
-                                <p class="contact-title">Medium</p> <a href="https://toothless5143.medium.com" class="contact-link">Articles</a>
-                            </div>
-                        </li>
-                        <li class="contact-item">
-                            <div class="icon-box">
-                                <ion-icon name="logo-linkedin"></ion-icon>
-                            </div>
-                            <div class="contact-info">
-                                <p class="contact-title">LinkedIn</p> <a href="https://www.linkedin.com/in/safwan-luban/" class="contact-link">Safwan Luban</a>
-                            </div>
-                        </li>
-                        <li class="contact-item">
-                            <div class="icon-box">
-                                <ion-icon name="ribbon-outline"></ion-icon>
-                            </div>
-                            <div class="contact-info">
-                                <p class="contact-title">Credly</p> <a href="https://www.credly.com/users/toothless5143/badges" class="contact-link">Badges</a>
-                            </div>
-                        </li>
-                        <li class="contact-item">
-                            <div class="icon-box">
-                                <ion-icon name="cube-outline"></ion-icon>
-                            </div>
-                            <div class="contact-info">
-                                <p class="contact-title">Hack The Box</p> <a href="https://app.hackthebox.com/profile/959088" class="contact-link">Pro Hacker</a>
-                            </div>
-                        </li>
-                        <li class="contact-item">
-                            <div class="icon-box">
-                                <ion-icon name="cloud-outline"></ion-icon>
-                            </div>
-                            <div class="contact-info">
-                                <p class="contact-title">TryHackMe</p> <a href="https://tryhackme.com/p/Toothless5143" class="contact-link">Top 3%</a>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-                <div class="separator"></div>
-                <!--
-               - #What I'm Doing
-               -->
-                <section class="service">
-                    <h3 class="h3 service-title">What I'm Doing</h3>
-                    <ul class="service-list">
-                        <li class="service-item">
-                            <div class="service-icon-box"> <img src="./assets/images/freelance.png
-                           " alt="Freelance" width="40" class="rounded-corners"> </div>
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Freelance Security Researcher</h4>
-                                <p class="service-item-text"> Providing various security services including Article Writing, Vulnerable Lab Making, Training, Pentesting, and Vulnerability Assessments on a freelance basis. </p>
-                            </div>
-                        </li>
-                        <li class="service-item">
-                            <div class="service-icon-box"> <img src="./assets/images/bug.png" alt="Content Creation" width="40"> </div>
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Security Content Creation</h4>
-                                <p class="service-item-text"> I conduct research on various security vulnerabilities and exploits, and I create blogs and vulnerable machines based on my findings to help new security professionals learn about different techniques. </p>
-                            </div>
-                        </li>
-                        <li class="service-item">
-                            <div class="service-icon-box"> <img src="./assets/images/cyber.png" alt="Cybersecurity" width="40"> </div>
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Self Learning</h4>
-                                <p class="service-item-text"> Continuously learning and practicing both offensive and defensive techniques to grow as a hacker. Practicing both offensive and defensive techniques is going to give me both attacker's and defender's perspective. </p>
-                            </div>
-                        </li>
-                        <li class="service-item">
-                            <div class="service-icon-box"> <img src="./assets/images/chess.png" alt="chess" width="40"> </div>
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Chess</h4>
-                                <p class="service-item-text"> I am committed to mastering chess, as it is a game that has been shown to improve a wide range of soft skills, such as stress management, critical thinking, and problem-solving. </p>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-                <div class="separator"></div>
-            </article>
-            <!--
-            - #AWARENESS
-            -->
-            <article class="awareness" data-page="awareness">
-                <header>
-                    <h2 class="h2 article-title">Awareness</h2>
-                </header>
-                <h3 class="h3 testimonials-title">Enhancing Your Online Safety</h3>
-                <ul class="service-list">
-                    <li class="service-item">
-                        <div class="service-icon-box"> <img src="./assets/images/linegreenglow50.PNG" width="40"> </div>
-                        <div class="service-content-box">
-                            <p class="service-item-text"> If someone claims to have your IP address, do not be alarmed. The process of tracing an IP address back to a specific home network is typically time-consuming and nearly impossible. Public IP addresses are meant to be accessible to the public, hence the name. </p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon-box"> <img src="./assets/images/linegreenglow50.PNG" width="40"> </div>
-                        <div class="service-content-box">
-                            <p class="service-item-text"> Be cautious when opening or executing zip, PDF, or Office files. Attackers frequently embed malicious macros and malware in these files. Before executing any unauthorized software or source code, carefully review the source code line by line. They could contain hidden backdoors. </p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon-box"> <img src="./assets/images/linegreenglow50.PNG" width="40"> </div>
-                        <div class="service-content-box">
-                            <p class="service-item-text"> You can protect yourself from common cyber attacks by being careful about what files you download, not clicking on links in emails or social media messages unless you are sure of the sender <br> <br> It is important to remember that 95% of cybersecurity incidents occur due to human error. By being aware of the risks and taking steps to protect yourself, you can help keep your personal information and devices safe. </p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon-box"> <img src="./assets/images/linegreenglow50.PNG" width="40"> </div>
-                        <div class="service-content-box">
-                            <p class="service-item-text"> Check if your email address or password has been compromised in a data breach using the website "haveibeenpwned.com". If it has, it is important to change your password for that email address and any other accounts that use the same password. This will help to protect yourself from credential stuffing attacks, where attackers use stolen passwords to try to log in to other accounts. </p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon-box"> <img src="./assets/images/linegreenglow50.PNG" width="40"> </div>
-                        <div class="service-content-box">
-                            <p class="service-item-text"> If you suspect that your device has been infected with a rootkit or malware, the most effective way to remove it is to perform a clean reinstall of your operating system. This will remove all traces of the malware, including any backdoors or reverse shells that may have been created. <br> <br> In addition to reinstalling your operating system, you should also check for outbound connections from your device. This can be done using a network security tool or by reviewing your firewall logs. Any outbound connections that you do not recognize should be investigated further. </p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon-box"> <img src="./assets/images/linegreenglow50.PNG" width="40"> </div>
-                        <div class="service-content-box">
-                            <p class="service-item-text"> When installing an app, it is important to be selective about the permissions that you grant. Only grant permissions that are essential for the app to function. For example, a weather app does not need access to your contacts or photos. <br> <br> If you are not using an app for an extended period of time, uninstall it. This will prevent the app from running in the background and collecting data from your device. <br> <br> It is also important to keep your software and operating system up to date. Software updates often include security patches that can help protect your device from malware and other threats. </p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon-box"> <img src="./assets/images/linegreenglow50.PNG" width="40"> </div>
-                        <div class="service-content-box">
-                            <p class="service-item-text"> Make sure you turn on 2FA for every site or app you use. This extra security step really helps stop others from taking over your accounts. Avoid saving passwords in your browser and try to use different strong passwords for each place you log in. To keep track of them, password managers are really helpful. Following these steps shows that you're serious about keeping your online accounts safe. </p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon-box"> <img src="./assets/images/linegreenglow50.PNG" width="40"> </div>
-                        <div class="service-content-box">
-                            <p class="service-item-text"> Be mindful of the personal information you share online. Attackers can use this information to guess your passwords or trick you into giving them more information. For example, they might know your hometown or pet's name and use that to create a convincing phishing email. It is best to have a separate online identity for activities where you do not want to share your real-world information. </p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon-box"> <img src="./assets/images/linegreenglow50.PNG" width="40"> </div>
-                        <div class="service-content-box">
-                            <p class="service-item-text"> Do not use cracked digital products. It is important to remember that if you do not pay for a product, you are the product. The creators of cracked products are often not interested in providing you with a good product or service. They are only interested in making money off of you. </p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon-box"> <img src="./assets/images/linegreenglow50.PNG" width="40"> </div>
-                        <div class="service-content-box">
-                            <p class="service-item-text"> Do not use public Wi-Fi without a VPN. Public Wi-Fi networks are often unsecured, which means that anyone who is connected to the same network can see your traffic. This includes your passwords, credit card numbers, and other sensitive information. A VPN encrypts your traffic, making it impossible for anyone to see what you are doing. </p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon-box"> <img src="./assets/images/linegreenglow50.PNG" width="40"> </div>
-                        <div class="service-content-box">
-                            <p class="service-item-text"> Keep your microphone and webcam disconnected physically if possible. When not in use, disconnect your microphone and webcam from your computer. This will help to prevent them from being used by malware or other malicious software to spy on you. <br> <br> Never connect a USB device to your computer without first validating it. USB devices can be used to deliver malware or other malicious software to your computer. Before connecting a USB device, make sure that you know where it came from and that it is from a trusted source. <br> <br> Monitor your system for unusual high resource usage. If you notice that your computer is using more resources than usual, it could be a sign that malware or other malicious software is running on your system. There are many different ways to monitor your system resources, such as using the Task Manager or a dedicated monitoring tool. </p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon-box"> <img src="./assets/images/linegreenglow50.PNG" width="40"> </div>
-                        <div class="service-content-box">
-                            <p class="service-item-text"> If you suspect that a file, link, or domain is malicious, you can scan it using "VirusTotal". VirusTotal is a website that aggregates the results of scans from multiple antivirus engines. This allows you to get a more comprehensive view of the potential risks associated with a file or domain. <br> <br> It is important to note that VirusTotal is not infallible. Attackers are constantly developing new methods to bypass antivirus detection. However, VirusTotal is still a valuable tool for identifying malicious files and domains. </p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon-box"> <img src="./assets/images/linegreenglow50.PNG" width="40"> </div>
-                        <div class="service-content-box">
-                            <p class="service-item-text"> If you are thinking "I don't need to take these precautions. Why would anyone hack me?", then you are the perfect target for cyber attacks. Attackers can use your device to mine cryptocurrency, launch a denial-of-service (DoS) attack, or steal your identity. If they are successful, you could be held liable for their actions. </p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon-box"> <img src="./assets/images/linegreenglow50.PNG" width="40"> </div>
-                        <div class="service-content-box">
-                            <p class="service-item-text"> While no device is 100% secure from cyber attacks, being aware of the risks and taking precautions can mitigate most of the threats. Our goal is not to make our devices impenetrable to attackers, but to make it difficult for them to gain access. By following these steps, you can help to prevent up to 90% of personalized cyber attacks. </p>
-                    </li>
-                </ul>
-            </article>
-            <!--
-            - #RESUME
-            -->
-            <article class="resume" data-page="resume">
-                <header>
-                    <h2 class="h2 article-title">Resume</h2>
-                </header>
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box">
-                            <ion-icon name="school-outline"></ion-icon>
-                        </div>
-                        <h3 class="h3">Education</h3>
-                    </div>
-                    <ol class="timeline-list">
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">University of the People, USA</h4> <span>Bachelor of Science in Computer Science | 2024 - Present</span>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Harvard University</h4> <span>CS50 Course - Introduction to Computer Science | 2022</span>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Ethical Hacking and Cybersecurity</h4> <span>Self-Study | 2021 - Present</span>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Web development</h4> <span>Self-Study | 2020</span>
-                        </li>
-                    </ol>
-                </section>
-                <div class="separator"></div>
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box">
-                            <ion-icon name="briefcase-outline"></ion-icon>
-                        </div>
-                        <h3 class="h3">Experience</h3>
-                    </div>
-                    <ol class="timeline-list">
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">WeCare Consultancy - Cyber Security Consultant</h4> <span>Jan 2024 - Present</span>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">GenCourse - Security Researcher</h4> <span>Nov 2021 - Dec 2023</span>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Frontend Web developer</h4> <span>2020</span>
-                        </li>
-                    </ol>
-                </section>
-                <div class="separator"></div>
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box">
-                            <ion-icon name="git-branch-outline"></ion-icon>
-                        </div>
-                        <h3 class="h3">Projects</h3>
-                    </div>
-                    <ol class="timeline-list">
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">CVE-2023-22809 PoC</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Subdomain Enumerator</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">XSS Scanner</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Port Scanner</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">API Fuzzer</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">WEB Crawler</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Idle Recon Script</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">File Integrity Monitor</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Github Scraper</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Keylogger</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Directory buster</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Honeypot</h4>
-                        </li>
-                        <!-- 
-            <li class="timeline-item"><h4 class="h4 timeline-item-title">#</h4></li>
-            -->
-                    </ol>
-                </section>
-                <div class="separator"></div>
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box">
-                            <ion-icon name="settings-outline"></ion-icon>
-                        </div>
-                        <h3 class="h3">Operating systems</h3>
-                    </div>
-                    <ol class="timeline-list">
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Linux</h4> <span>Arch, Kali, Parrot, Blackarch, Amazon Linux, RHEL, Ubuntu, Debian, Fedora, Manjaro, Lubuntu</span>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Windows</h4> <span>Windows 7, 10, 11</span>
-                        </li>
-                    </ol>
-                </section>
-                <div class="separator"></div>
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box">
-                            <ion-icon name="server-outline"></ion-icon>
-                        </div>
-                        <h3 class="h3">Technical languages</h3>
-                    </div>
-                    <ol class="timeline-list">
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">C</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Python</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">SQL</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Bash</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">PowerShell*</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">HTML</h4>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Markdown</h4>
-                        </li>
-                    </ol>
-                </section>
-                <div class="separator"></div>
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box">
-                            <ion-icon name="cube-outline"></ion-icon>
-                        </div>
-                        <h3 class="h3">Expertise</h3>
-                    </div>
-                    <ol class="timeline-list">
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Fundamental</h4> <span>Computer hardware knowledge, Networking knowledge, Hyper-V technology knowledge</span>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Red teaming</h4> <span>OWASP top 10, Active and passive recon, Footprinting, File transfer methods, CMS exploitation(WordPress), Footprinting, Windows and Linux privilege escalation, Vulnerability assessment, Basic AD enumeration & exploitation, Web pentesting.</span>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Blue teaming</h4> <span>Pyramid of Pain, Cyber Kill Chain, Unified Cyber Kill Chain, Diamond Model, MITRE, Basics of Yara, Network security and traffic analysis, endpoint security monitoring, Security information and event management, Digital forensics and incident response, Analyzing phishing mails.</span>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Tools</h4> <span>Nmap, Burp Suite, Fuff, Sqlmap, Nessus, Hydra, Metasploit, Wireshark, TCPdump, Responder, Bloodhound, Mimikatz, Rubeus, PowerView, Snort, Zeek, NetworkMiner, Brim, Wazuh, Splunk, Autopsy, Redline, Kape, Volatility.</span>
-                        </li>
-                    </ol>
-                </section>
-                <div class="separator"></div>
-                <section class="skill">
-                    <h3 class="h3 skills-title">My Skills Summary</h3>
-                    <ul class="skills-list content-card">
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Web Application Penetration Testing</h5> <data value="60">60%</data>
-                            </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 60%;"></div>
-                            </div>
-                        </li>
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Network Penetration Testing</h5> <data value="80">80%</data>
-                            </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 80%;"></div>
-                            </div>
-                        </li>
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Cloud Security Engineer</h5> <data value="70">70%</data>
-                            </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 70%;"></div>
-                            </div>
-                        </li>
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Digital Forensics</h5> <data value="70">70%</data>
-                            </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 70%;"></div>
-                            </div>
-                        </li>
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Incident Response</h5> <data value="65">65%</data>
-                            </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 65%;"></div>
-                            </div>
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Malware Analysis</h5> <data value="40">40%</data>
-                            </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 40%;"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-                <div class="separator"></div>
-            </article>
-            <!--
-            - #Certifications
-            -->
-            <article class="certifications" data-page="certifications">
-                <header>
-                    <h2 class="h2 article-title">Certifications</h2>
-                </header>
-                <section class="projects">
-                    <div class="filter-select-box"> <button class="filter-select" data-select>
-                            <div class="select-value" data-selecct-value>Select category</div>
-                            <div class="select-icon">
-                                <ion-icon name="chevron-down"></ion-icon>
-                            </div>
-                        </button>
-                        <ul class="select-list">
-                            <li class="select-item"> <button data-select-item>All</button> </li>
-                        </ul>
-                    </div>
-                  
-                    <ul class="project-list">
-                        <li class="project-item  active" data-filter-item data-category="All"> <a href="./certifications/comptia-sec+.pdf">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/comptia-sec+.png" alt="CompTIA Security+" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">CompTIA Security+</h3>
-                                <p class="project-category"> CompTIA Security+ professionals can identify threats, attacks, and vulnerabilities. They excel in risk management, mitigation, threat response, and intrusion detection. </p>
-                            </a> </li>
-                        <li class="project-item  active" data-filter-item data-category="All"> <a href="./certifications/htb-cpts.pdf">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/htb-cpts.png" alt="HTB Certified Penetration Testing Specialist" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">HTB Certified Penetration Testing Specialist</h3>
-                                <p class="project-category">HTB CPTS holders will possess technical competency in the ethical hacking and penetration testing domains at an intermediate level.</p>
-                            </a> </li>
-                        <li class="project-item  active" data-filter-item data-category="All"> <a href="./certifications/google-pcse.pdf">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/google-pcse.png" alt="Google Professional Cloud Security Engineer" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Google Professional Cloud Security Engineer</h3>
-                                <p class="project-category">A Cloud Security Engineer designs and implements secure workloads using Google security technologies and industry-standard compliances.</p>
-                            </a> </li>
-                        <li class="project-item  active" data-filter-item data-category="All"> <a href="./certifications/cwl-crta.pdf">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/cwl-crta.png" alt="Google Professional Cloud Security Engineer" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">CWL Certified Red Team Analyst</h3>
-                                <p class="project-category">The Certified Red Team Analyst (CRTA) certifies expertise in adversary emulation, red teaming tactics, and Active Directory exploitation through a hands-on exam.</p>
-                            </a> </li>
-                        <li class="project-item  active" data-filter-item data-category="All"> <a href="./certifications/isc2-cc.png">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/ics2-cc_banner.png" alt="ISC2 Certified In Cybersecurity" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">ISC2 Certified In Cybersecurity</h3>
-                                <p class="project-category">ISC2 CC helps newcomers on their path to advanced cybersecurity certifications and future leadership roles (Passed but haven't claimed the cert yet).</p>
-                            </a> </li>
-                        <li class="project-item  active" data-filter-item data-category="All"> <a href="./certifications/azure-ai_900.pdf">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/azure-ai_900.png" alt="Microsoft Certified: Azure AI Fundamentals" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Microsoft Certified: Azure AI Fundamentals</h3>
-                                <p class="project-category">Azure AI Fundamentals certification validates essential knowledge of artificial intelligence (AI) and machine learning (ML) concepts within the Microsoft Azure environment.</p>
-                            </a> </li>
-                        <li class="project-item  active" data-filter-item data-category="All"> <a href="./certifications/google-cybersec.pdf">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/google-cybersec.png" alt="Google Cybersecurity Professional" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Google Cybersecurity Professional</h3>
-                                <p class="project-category">Developed by Google, that include hands-on, practice-based assessments and are designed to prepare them for entry-level roles in cybersecurity.</p>
-                            </a> </li>
-                        <li class="project-item  active" data-filter-item data-category="All"> <a href="./certifications/ibm-cybersec.pdf">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/ibm-cybersec.png" alt="IBM Cybersecurity Analyst" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">IBM Cybersecurity Analyst</h3>
-                                <p class="project-category">The certification earner is ready for a career in cybersecurity with a demonstrated ability to solve real-world problems.</p>
-                            </a> </li>
-                        <li class="project-item  active" data-filter-item data-category="All"> <a href="./certifications/htb-dante.pdf">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/htb-dante.png" alt="HTB Dante Prolab" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">HTB Dante Prolab</h3>
-                                <p class="project-category">Dante Pro Lab is a captivating environment that features both Linux and Windows Operating Systems.</p>
-                            </a> </li>
-                        <li class="project-item  active" data-filter-item data-category="throwback"> <a href="./certifications/thm-throwback.png">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/thm-throwback.png" alt="THM Throwback Lab" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">THM Throwback Lab</h3>
-                                <p class="project-category">Throwback is an Active Directory (AD) lab that teaches the fundamentals and core concepts of attacking a Windows network.</p>
-                            </a> </li>
-                        <li class="project-item  active" data-filter-item data-category="All"> <a href="./certifications/secops_group-cap.pdf">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/secops_group-cap.png" alt="Certified Appsec Practitioner" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">The SecOps Group Certified Appsec Practitioner</h3>
-                                <p class="project-category">Certified Appsec Practitioner (CAP) is an intermediate-level exam to test attendees’ knowledge on the core concepts of application security.</p>
-                            </a> </li>
-                        <li class="project-item  active" data-filter-item data-category="All"> <a href="./certifications/secops_group-cnsp.pdf">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/secops_group-cnsp.png" alt="Certified Network Security Practitioner" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">The SecOps Group Certified Network Security Practitioner</h3>
-                                <p class="project-category">Certified Network Security Practitioner (CNSP) is an entry-level exam to test a candidate’s knowledge on the core concepts of network security.</p>
-                            </a> </li>
-                         <li class="project-item  active" data-filter-item data-category="soc"> <a href="./certifications/apisec.pdf">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/apisec.png" alt="APIsec University API Penetration Testing" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">APIsec University API Penetration Testing</h3>
-                                <p class="project-category">The API Penetration Testing course provides hands-on instruction on testing APIs for security flaws.</p>
-                            </a> </li>
-                         <li class="project-item  active" data-filter-item data-category="soc"> <a href="./certifications/splunk-soc.pdf">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/splunk-soc.png" alt="Splunk Security Operations and the Defense Analyst Course" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Splunk Security Operations and the Defense Analyst Course</h3>
-                                <p class="project-category">Security Operations and the Defense Analyst includes important concepts that can be the foundation of a career as a Defense Analyst in a SOC.</p>
-                            </a> </li>
-                        <li class="project-item  active" data-filter-item data-category="Virtual Internship"> <a href="./certifications/clifford_chance-internship.pdf">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/clifford_chance-internship.png" alt="Clifford Chance Cyber Security Global Virtual Internship" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Clifford Chance Cyber Security Global Virtual Internship</h3>
-                                <p class="project-category">The Cyber Security Global Virtual Internship at Clifford Chance is a valuable opportunity to learn about the legal and commercial implications of cyber risks.</p>
-                            </a> </li>
-                        <li class="project-item  active" data-filter-item data-category="cysa"> <a href="./certifications/cybrary-comptia_cysa+.pdf">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/cybrary-comptia_cysa+.png" alt="Cybrary CompTIA CySA+ Course" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Cybrary CompTIA CySA+ Course</h3>
-                                <p class="project-category">The CompTIA Cybersecurity Analyst (CySA+ CS0-002) certification prepares you to identify and combat malware, advanced persistent threats (APTs), and other attacks that threaten an organization’s security.</p>
-                            </a> </li>
-                        <li class="project-item  active" data-filter-item data-category="soc"> <a href="./certifications/thm-soc_l1.png">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/thm-soc_l1.png" alt="THM SOC Level 1 Training Path" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">THM SOC Level 1 Training Path</h3>
-                                <p class="project-category">Level 1 SOC Analysts (also known as Tier 1 SOC Analysts or entry-level SOC Analysts) are triage specialists with a primary role of monitoring and identifying potential threats.</p>
-                            </a> </li>
-                    </ul>
-                </section>
-                 <div class="separator"></div>
-           
-                <!--
-            - #Achievements
-            -->
-                <section class="achievements">
-
-                       <h3 class="h3 service-title">Achievements</h3>
-                      <ul class="project-list">
-                        <li class="project-item  active" data-filter-item data-category="All"> <a href="./certifications/uopeople-acknowledgement.pdf">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div> <img src="./certifications/uopeople-acknowledgement.png" alt="CompTIA Security+" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Acknowledgement from UoPeople</h3>
-                                <p class="project-category">  Received an appreciation letter from Nofar Sharon, Vice President for Retention and Student Experience, for identifying and reporting a P2 security bug, contributing to system improvements, and enhancing the student experience. </p>
-                        </a> </li>
-                     </ul>
-                </section>
-            <!--
-            - #BLOG
-            -->
-            <article class="blogs" data-page="blogs">
-                <header>
-                    <h2 class="h2 article-title">Blogs</h2>
-                </header>
-                <section class="blog-posts">
-                    <ul class="blog-posts-list">
-                        <li class="blog-post-item"> <a href="https://toothless5143.medium.com/htb-cozyhosting-formal-writeup-2fddbf424bfa">
-                                <figure class="blog-banner-box"> <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*f1_QwTQl9cvtWjAsFiXRew.png" alt="Easy" loading="lazy"> </figure>
-                                <div class="blog-content">
-                                    <div class="blog-meta"> <span class="dot"></span>
-                                        <p class="blog-category">Hack The Box</p>
-                                    </div>
-                                    <h3 class="h3 blog-item-title">HTB CozyHosting: Formal Writeup</h3>
-                                    <p class="blog-text">Cozy hosting is a project hosting service web app hosted on nginx 1.18.0.</p>
-                                </div>
-                            </a> </li>
-                        <li class="blog-post-item"> <a href="https://toothless5143.medium.com/agile-htb-writeup-46d16d45110b">
-                                <figure class="blog-banner-box"> <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*e384c8pWgiOtk7lg7QZ4Ww.png" alt="Medium" loading="lazy"> </figure>
-                                <div class="blog-content">
-                                    <div class="blog-meta"> <span class="dot"></span>
-                                        <p class="blog-category">Hack The Box</p>
-                                    </div>
-                                    <h3 class="h3 blog-item-title">HTB Agile: Formal Writeup</h3>
-                                    <p class="blog-text">The Agile HTB Linux machine, that hosted a password manager which was vulnerable to IDOR and LFI.</p>
-                                </div>
-                            </a> </li>
-                        <li class="blog-post-item"> <a href="https://toothless5143.medium.com/busqueda-htb-writeup-b52913946702">
-                                <figure class="blog-banner-box"> <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*lFKfIKGKXmWBDbV1sUt6RQ.png" alt="Medium" loading="lazy"> </figure>
-                                <div class="blog-content">
-                                    <div class="blog-meta"> <span class="dot"></span>
-                                        <p class="blog-category">Hack The Box</p>
-                                    </div>
-                                    <h3 class="h3 blog-item-title">HTB Busqueda: Formal Writeup</h3>
-                                    <p class="blog-text">On the host Busqueda a vulnerable web app was running, by exploiting the web app’s query parameter the attacker gained RCE & the initial foothold.</p>
-                                </div>
-                            </a> </li>
-                        <li class="blog-post-item"> <a href="https://toothless5143.medium.com/monitorstwo-htb-writeup-c64b974230d8">
-                                <figure class="blog-banner-box"> <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*fGQbeX4aQAe3lLtaRX02tQ.png" alt="Medium" loading="lazy"> </figure>
-                                <div class="blog-content">
-                                    <div class="blog-meta"> <span class="dot"></span>
-                                        <p class="blog-category">Hack The Box</p>
-                                    </div>
-                                    <h3 class="h3 blog-item-title">HTB MonitorsTwo: Formal Writeup</h3>
-                                    <p class="blog-text">MonitorsTwo is an easy-to-hack Linux machine that is vulnerable to the CVE-2022–46169 vulnerability.</p>
-                                </div>
-                            </a> </li>
-                        <li class="blog-post-item"> <a href="https://toothless5143.medium.com/htb-keeper-formal-writeup-79d4f1830119">
-                                <figure class="blog-banner-box"> <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*kOMguaEs1c3mMvaprL_Z5g.png" alt="Easy" loading="lazy"> </figure>
-                                <div class="blog-content">
-                                    <div class="blog-meta"> <span class="dot"></span>
-                                        <p class="blog-category">Hack The Box</p>
-                                    </div>
-                                    <h3 class="h3 blog-item-title">HTB Keeper: Formal Writeup</h3>
-                                    <p class="blog-text">Keeper is a Linux easy machine that hosts the Request Ticket (RT 4.4.4) web application.</p>
-                                </div>
-                            </a> </li>
-                        <li class="blog-post-item"> <a href="https://toothless5143.medium.com/traverxec-htb-writeup-747de5d82be0">
-                                <figure class="blog-banner-box"> <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*ciiNQX1YLrTCnABjv9MrVQ.png" alt="Medium" loading="lazy"> </figure>
-                                <div class="blog-content">
-                                    <div class="blog-meta"> <span class="dot"></span>
-                                        <p class="blog-category">Hack The Box</p>
-                                    </div>
-                                    <h3 class="h3 blog-item-title">HTB Traverxec: Formal Writeup</h3>
-                                    <p class="blog-text">Traverxec is a HTB machine that hosted an outdated Nostromo web server which was vulnerable to RCE.</p>
-                                </div>
-                            </a> </li>
-                        <li class="blog-post-item"> <a href="https://toothless5143.medium.com/cyber-security-roadmap-a1c711f846c4">
-                                <figure class="blog-banner-box"> <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*0GBepDImtmyn8Ljt" alt="Medium" loading="lazy"> </figure>
-                                <div class="blog-content">
-                                    <div class="blog-meta"> <span class="dot"></span>
-                                        <p class="blog-category">Cybersecurity</p>
-                                    </div>
-                                    <h3 class="h3 blog-item-title">Cybersecurity Roadmap For Dummies</h3>
-                                    <p class="blog-text">As a self-taught Ethical Hacker with a profound passion for cybersecurity, I am pleased to offer a comprehensive roadmap.</p>
-                                </div>
-                            </a> </li>
-                        <li class="blog-post-item"> <a href="https://toothless5143.medium.com/my-personal-thoughts-on-htb-cpts-4ee6d23f69a0">
-                                <figure class="blog-banner-box"> <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Ksxcfpe7nSnQ1HyZ5wQjzQ.png" alt="Medium" loading="lazy"> </figure>
-                                <div class="blog-content">
-                                    <div class="blog-meta"> <span class="dot"></span>
-                                        <p class="blog-category">Certification</p>
-                                    </div>
-                                    <h3 class="h3 blog-item-title">Insights on HTB CPTS: An Empowering Learning Experience</h3>
-                                    <p class="blog-text">After dedicating over six months to immersing myself in a comprehensive exploration of pentesting concepts...</p>
-                                </div>
-                            </a> </li>
-                        <li class="blog-post-item"> <a href="https://toothless5143.medium.com/kubernetes-for-pentesters-essential-fundamentals-unveiled-section-1-bba24c6c43e8">
-                                <figure class="blog-banner-box"> <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*LvBcmloDcnYV0w4b" alt="Medium" loading="lazy"> </figure>
-                                <div class="blog-content">
-                                    <div class="blog-meta"> <span class="dot"></span>
-                                        <p class="blog-category">Kubernetes</p>
-                                    </div>
-                                    <h3 class="h3 blog-item-title">Kubernetes for Pentesters: Essential Terms Explained Part 1</h3>
-                                    <p class="blog-text">An open-source platform called Kubernetes automates the administration, scalability, and deployment of containerized applications.</p>
-                                </div>
-                            </a> </li>
-                        <li class="blog-post-item"> <a href="https://toothless5143.medium.com/demystifying-kubernetes-a-comprehensive-guide-for-pentesters-to-master-the-fundamentals-1-1-bd5060e7ed0e">
-                                <figure class="blog-banner-box"> <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*ajR5QPBkFGUlvja4BUFJAQ.png" alt="Medium" loading="lazy"> </figure>
-                                <div class="blog-content">
-                                    <div class="blog-meta"> <span class="dot"></span>
-                                        <p class="blog-category">Kubernetes</p>
-                                    </div>
-                                    <h3 class="h3 blog-item-title">Demystifying Kubernetes: A Comprehensive Guide to Master the Fundamentals Part 1.1</h3>
-                                    <p class="blog-text">Kubernetes is a free and open-source technology for container orchestration (commonly referred to as “K8s”).</p>
-                                </div>
-                            </a> </li>
-                        <li class="blog-post-item"> <a href="https://toothless5143.medium.com/insights-on-isc2-cc-free-certification-your-gateway-to-cybersecurity-success-23626a02b23c">
-                                <figure class="blog-banner-box"> <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*MN-txvma8yUW1lK7WhNqbw.png" alt="Medium" loading="lazy"> </figure>
-                                <div class="blog-content">
-                                    <div class="blog-meta"> <span class="dot"></span>
-                                        <p class="blog-category">Certification</p>
-                                    </div>
-                                    <h3 class="h3 blog-item-title">Insights on ISC2 CC: Entry-Level Free Cybersecurity Certification</h3>
-                                    <p class="blog-text">The CC exam was pretty easy to me as I have a quite good basic and I have been on the cybersecurity industry for a while...</p>
-                                </div>
-                            </a> </li>
-                        <li class="blog-post-item"> <a href="https://toothless5143.medium.com/a-complete-guide-to-making-a-keylogger-for-ethical-use-164dd304ffab">
-                                <figure class="blog-banner-box"> <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*61hidEM3m8n2dXC5" alt="Medium" loading="lazy"> </figure>
-                                <div class="blog-content">
-                                    <div class="blog-meta"> <span class="dot"></span>
-                                        <p class="blog-category">Malware</p>
-                                    </div>
-                                    <h3 class="h3 blog-item-title">A Complete Guide to Making a Keylogger for Ethical Use</h3>
-                                    <p class="blog-text">A keylogger is a program that records keystrokes made on a target system. It can record crucial data like login credentials...</p>
-                                </div>
-                            </a> </li>
-            </article>
+  <main>
+    <aside class="sidebar">
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Safwan Luban" width="80" class="rounded-corners">
+        </figure>
+        <div class="info-content">
+          <h1 class="name">Safwan Luban</h1>
+          <p class="title">Ethical Hacker, Independent Security Researcher</p>
         </div>
-    </main>
-    <!--
-         - custom js link
-         -->
-    <script src="./assets/js/script.js"></script>
-    <!--
-         - ionicon link
-         -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <button class="info_more-btn">
+          <span>Show More</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="information-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Online Identity</p>
+              <a href="#" class="contact-link">Toothless5143</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="cloud-done-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Cloud Role</p>
+              <a href="#" class="contact-link">Security Engineer</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Offensive Role</p>
+              <a href="#" class="contact-link">Penetration Tester</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="shield-half-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Defensive Role</p>
+              <a href="#" class="contact-link">SOC Analyst</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="mailto:contact@safwanluban.xyz" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://discord.com/users/565518876067102740" class="social-link">
+              <ion-icon name="logo-discord"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://twitter.com/Toothless5143" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active">Home</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link">Awareness</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link">Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link">Certifications</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link">Blogs</button>
+          </li>
+        </ul>
+      </nav>
+      <article class="home active">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <section class="about-text">
+          <p>Harnessing a commitment to relentless self-learning, I possess expertise in both offensive and defensive cybersecurity operations. My curiosity fuels a creative approach to defending digital environments, where I translate complex concepts into actionable insights to enhance organizational security. Passionate about empowering teams and fostering a culture of security awareness, I strive to contribute to a safer digital landscape.</p>
+          <p>Beyond cybersecurity, I am a multifaceted individual with a thirst for knowledge. My interests include chess, music, reading diverse books, philosophy, and meditation. As an INTJ-T personality type, I thrive on deep thinking and introspection, constantly seeking to expand my understanding of the world.</p>
+          <div class="stats-container" style="display: flex; justify-content: center; align-items: center; gap: 50px; margin-top: 40px; flex-wrap: wrap;">
+            <div class="stat" style="flex-basis: 20%; min-width: 150px;">
+              <h3 style="color: #39FF14; font-weight: bold;">03+</h3>
+              <p>Years of Experience</p>
+            </div>
+            <div class="stat" style="flex-basis: 20%; min-width: 150px;">
+              <h3 style="color: #39FF14; font-weight: bold;">05+</h3>
+              <p>Years of Self Learning Experience</p>
+            </div>
+            <div class="stat" style="flex-basis: 20%; min-width: 150px;">
+              <h3 style="color: #39FF14; font-weight: bold;">15+</h3>
+              <p>Certifications Earned</p>
+            </div>
+            <div class="stat" style="flex-basis: 20%; min-width: 150px;">
+              <h3 style="color: #39FF14; font-weight: bold;">50+</h3>
+              <p>CTF's Participated</p>
+            </div>
+          </div>
+        </section>
+        <div class="separator"></div>
+        <section class="portfolio">
+          <h3 class="h3 service-title">Portfolio</h3>
+          <ul class="contacts-list" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-github"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">GitHub</p>
+                <a href="https://github.com/Toothless5143" class="contact-link">Projects</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-medium"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Medium</p>
+                <a href="https://toothless5143.medium.com" class="contact-link">Articles</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/safwan-luban/" class="contact-link">Safwan Luban</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="ribbon-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Credly</p>
+                <a href="https://www.credly.com/users/toothless5143/badges" class="contact-link">Badges</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="cube-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Hack The Box</p>
+                <a href="https://app.hackthebox.com/profile/959088" class="contact-link">Pro Hacker</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="cloud-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">TryHackMe</p>
+                <a href="https://tryhackme.com/p/Toothless5143" class="contact-link">Top 3%</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <div class="separator"></div>
+        <section class="service">
+          <h3 class="h3 service-title">What I'm Doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/freelance.png" alt="Freelance" width="40" class="rounded-corners">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Freelance Security Researcher</h4>
+                <p class="service-item-text">Providing various security services including Article Writing, Vulnerable Lab Making, Training, Pentesting, and Vulnerability Assessments on a freelance basis.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/bug.png" alt="Content Creation" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Security Content Creation</h4>
+                <p class="service-item-text">I conduct research on various security vulnerabilities and exploits, and I create blogs and vulnerable machines based on my findings to help new security professionals learn about different techniques.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/cyber.png" alt="Cybersecurity" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Self Learning</h4>
+                <p class="service-item-text">Continuously learning and practicing both offensive and defensive techniques to grow as a hacker. Practicing both offensive and defensive techniques is going to give me both attacker's and defender's perspective.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/chess.png" alt="chess" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Chess</h4>
+                <p class="service-item-text">I am committed to mastering chess, as it is a game that has been shown to improve a wide range of soft skills, such as stress management, critical thinking, and problem-solving.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <div class="separator"></div>
+      </article>
+      <article class="awareness">
+        <header>
+          <h2 class="h2 article-title">Awareness</h2>
+        </header>
+        <h3 class="h3 testimonials-title">Enhancing Your Online Safety</h3>
+        <ul class="service-list">
+          <!-- Awareness items here -->
+        </ul>
+      </article>
+      <article class="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <!-- Resume sections here -->
+      </article>
+      <article class="certifications">
+        <header>
+          <h2 class="h2 article-title">Certifications</h2>
+        </header>
+        <!-- Certifications list here -->
+      </article>
+      <article class="blogs">
+        <header>
+          <h2 class="h2 article-title">Blogs</h2>
+        </header>
+        <!-- Blog posts here -->
+      </article>
+    </div>
+  </main>
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
